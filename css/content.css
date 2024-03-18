@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "The Amsterdam";
+    src: url("../fonts/AmsterdamOne.ttf");
+}
+
+@font-face {
+    font-family: "Crimson";
+    src: url("../fonts/CrimsonPro-Regular.ttf");
+}
+
+#logo-title {
+    font-family: 'The Amsterdam', sans-serif;
+    color: #f6ede3;
+}
+
+#logo-subtitle {
+    font-family: 'Crimson', sans-serif;
+    font-style: italic;
+    color: #f6ede3;
+}
+
+ul.menu li {
+    font-family: 'Crimson', sans-serif;
+}
+
+ul.menu li.unselected a {
+    color: #f6ede3;
+    text-decoration: none;
+}
+
+ul.menu li.selected,
+ul.menu li.unselected:hover a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+ul.menu li.unselected:hover a {
+    cursor: pointer;
+}
+
+h1, h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p,
+ul.content {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+ul.content {
+
+    text-align: justify;
+    list-style-position: inside;
+
+}
+
+main a {
+    color: #888888;
+    text-decoration: none;
+}
+
+img.vertical {
+    width: 300px;
+    height: auto;
+}
+
+img.horizontal {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    margin: 5px auto;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+}
+
+input[type="submit"] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+textarea::placeholder {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 601px) {
+    #logo-title {
+        line-height: 18px;
+        font-size: 18px;
+    }
+
+    #logo-subtitle {
+        line-height: 12px;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    ul.menu li {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    #logo-title {
+        line-height: 14px;
+        font-size: 14px;
+    }
+
+    #logo-subtitle {
+        line-height: 9px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    ul.menu li {
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #logo-title {
+        line-height: 10px;
+        font-size: 10px;
+    }
+
+    #logo-subtitle {
+        font-size: 6px;
+        letter-spacing: 1px;
+    }
+}
