@@ -38,6 +38,11 @@ h3 {
     font-size: 28px;
 }
 
+footer p {
+    margin: 0;
+    line-height: 18px;
+}
+
 p,
 ul.content {
     line-height: 24px;

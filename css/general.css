@@ -43,3 +43,10 @@ main.info {
 main.info article {
     width: 40%
 }
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: #fffff6;
+}
