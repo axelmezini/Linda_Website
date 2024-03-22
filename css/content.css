@@ -1,20 +1,8 @@
-@font-face {
-    font-family: "The Amsterdam";
-    src: url("fonts/AmsterdamOne.ttf");
-}
-
-@font-face {
-    font-family: "Crimson";
-    src: url("fonts/CrimsonPro-Regular.ttf");
-}
-
 #logo-title {
-    font-family: 'The Amsterdam', sans-serif;
     color: #fffff6;
 }
 
 #logo-subtitle {
-    font-family: 'Crimson', sans-serif;
     font-style: italic;
     color: #fffff6;
 }
@@ -53,7 +41,7 @@ h3 {
 p,
 ul.content {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 ul.content {
