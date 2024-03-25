@@ -1,2 +1,12 @@
+Home:
+Foto profilo quanto radius?
+Posizione e grandezza frase pagina iniziale?
+Aggiungere button contattami
+
+Approccio:
+aggiungere foto?
+
+Footer test tutte le pagine
+
 barra e test piu grigio scuro
 template due colonne
