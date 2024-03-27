@@ -17,7 +17,29 @@ header {
 }
 
 main {
-    padding: 100px 20% 40px 20%;
+    padding: 100px 10% 40px 10%;
+}
+
+main.info {
+    display: flex;
+}
+
+.input-container {
+    text-align: center;
+    flex: 0 0 45%;
+}
+
+@media only screen and (min-width: 960px) {
+    main.info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    main.info {
+        flex-direction: column;
+    }
 }
 
 
@@ -48,30 +70,41 @@ main p {
 }
 
 
-/* List */
+/* List and link */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+}
+
 nav ul {
     display: flex;
     margin-right: 15px;
 }
 
-nav ul li {
-    list-style-type: none;
-    font-family: Arial, sans-serif;
-}
-
-nav ul li a {
+nav a {
     color: #595959;
     text-decoration: none;
 }
 
-nav ul li:hover a,
-nav ul li.selected {
+nav li:hover a,
+nav li.selected {
     color: #ffd700;
     text-decoration: underline;
 }
 
-nav ul li:hover a {
+nav li:hover a {
     cursor: pointer;
+}
+
+main li {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: #595959;
 }
 
 
@@ -86,4 +119,45 @@ img.profile-pic {
     width: 250px;
     height: auto;
     border-radius: 180px;
+}
+
+
+/* Form */
+input,
+textarea {
+    margin: 10px auto;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 60%;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+textarea {
+    width: 84%;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+textarea::placeholder {
+    font-family: Arial, sans-serif;
 }

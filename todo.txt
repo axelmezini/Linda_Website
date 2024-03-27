@@ -1,12 +1,12 @@
 Home:
 Foto profilo quanto radius?
-Posizione e grandezza frase pagina iniziale?
+Posizionare nome cognome e lavoro e frase
 Aggiungere button contattami
+Fare pagina unica
+Footer fisso
+Ristrutturare aree
 
 Approccio:
 aggiungere foto?
 
 Footer test tutte le pagine
-
-barra e test piu grigio scuro
-template due colonne
