@@ -1,5 +1,9 @@
 footer {
-    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 45px;
     text-align: center;
     background-color: black;
     color: #fffff6;
@@ -11,14 +15,14 @@ footer p {
 }
 
 @media only screen and (min-width: 601px) {
-    ul.menu li {
+    nav ul li {
         margin: 10px;
         font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 600px) {
-    ul.menu li {
+    nav ul li {
         margin: 5px;
         font-size: 16px;
     }

@@ -1,5 +1,7 @@
 /* Layout */
 body {
+    position: relative; /* ?? */
+    min-height: 100vh; /* ?? */
     margin: 0;
     background-color: rgba(255, 255, 246, 0.7);
 }
@@ -12,7 +14,6 @@ header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #fffff6;
 }
 
@@ -25,7 +26,6 @@ main.info {
 }
 
 .input-container {
-    text-align: center;
     flex: 0 0 45%;
 }
 
@@ -42,17 +42,22 @@ main.info {
     }
 }
 
+section {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
 
 /* Text */
 h1,
 h3,
 main p {
-    text-align: center;
     font-family: Arial, sans-serif;
     color: #595959;
 }
 
 h1, h3 {
+    margin: 10px;
     font-weight: normal;
 }
 
@@ -101,10 +106,23 @@ nav li:hover a {
 }
 
 main li {
-    text-align: center;
     font-size: 16px;
     line-height: 22px;
     color: #595959;
+}
+
+button {
+    padding: 20px 30px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45A049;
 }
 
 
