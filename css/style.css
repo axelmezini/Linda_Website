@@ -3,7 +3,7 @@ body {
     margin: 0;
     position: relative;
     min-height: 100vh;
-    background-color: rgba(255, 255, 246, 0.7);
+    background-color: white;
 }
 
 header {
@@ -14,15 +14,11 @@ header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    background-color: #fffff6;
+    background-color: white;
 }
 
 main {
     padding: 150px 8% 100px 8%;
-}
-
-div.row-container {
-    display: flex;
 }
 
 section.row-container {
@@ -30,18 +26,19 @@ section.row-container {
     align-items: center;
 }
 
-article,
-section {
-    text-align: center;
+article {
+    margin-bottom: 80px;
 }
 
-article,
 section.stand-alone {
-    margin-bottom: 120px;
+    text-align: center;
 }
 
 .half-col {
     flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .forty-col {
@@ -60,20 +57,16 @@ footer {
     width: 100%;
     z-index: 1;
     text-align: center;
-    background-color: #555555;
-    color: #fffff6;
+    background-color: grey;
 }
 
+/*Media query for forms*/
 @media only screen and (min-width: 960px) {
-    div.row-container {
-        justify-content: space-between;
-    }
+
 }
 
 @media only screen and (max-width: 960px) {
-    div.row-container {
-        flex-direction: column;
-    }
+
 }
 
 
@@ -91,6 +84,7 @@ nav li {
     list-style-type: none;
 }
 
+/*TODO: Change Font*/
 nav li.selected {
     font-family: "Arial", sans-serif;
 }
@@ -100,7 +94,7 @@ nav a {
 }
 
 nav li:hover a,
-nav li.selected {
+nav li.open {
     color: #ffd700;
     text-decoration: underline;
 }
@@ -110,24 +104,20 @@ nav li:hover a {
 }
 
 main ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
 }
 
 main li {
-    margin: 0 10px;
     list-style-position: inside;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
 }
 
 
 /* Text */
 .text {
-    font-family: "Arial", sans-serif;
-    color: #595959;
+    font-family: "Aptos", sans-serif;
+    color: grey;
 }
 
 h1, h3 {
@@ -143,25 +133,33 @@ h3 {
 }
 
 h3.div-title {
-    margin-bottom: 70px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
 }
 
-h3.short-article-title {
-    margin-bottom: 5px;
+h3.article-title {
+    margin-bottom: 0px;
 }
 
-h3.long-article-title {
-    margin-bottom: 30px;
+/*TODO: Placehoder logo*/
+header p {
+    font-size: 18px;
+    padding-left: 20px;
 }
 
 main p {
-    font-size: 18px;
-    line-height: 26px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 36px;
 }
 
+/*TODO: Change font */
 footer p {
+    font-family: "Arial", sans-serif;
     font-size: 14px;
-    color: #fffff6;
+    color: white;
 }
 
 
@@ -175,11 +173,16 @@ img {
 img.profile-pic {
     width: 250px;
     height: auto;
-    border-radius: 180px;
+    border-radius: 160px;
+    border: solid 1px
 }
 
 
 /* Form */
+form {
+    text-align: center;
+}
+
 input,
 textarea {
     margin: 10px auto;
@@ -206,8 +209,8 @@ textarea {
 
 button,
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: #FFFFFF;
+    background-color: lightblue;
+    color: black;
     cursor: pointer;
 }
 
@@ -217,11 +220,12 @@ input[type="submit"] {
 
 button {
     padding: 20px 30px;
-    border: 1px solid #888888;
+    border: 1px solid grey;
     border-radius: 4px;
     font-size: 16px;
 }
 
+/*TODO: Cambiare stile bottoni*/
 button:hover,
 input[type="submit"]:hover {
     background-color: #006837;
