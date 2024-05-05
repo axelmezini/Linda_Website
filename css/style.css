@@ -18,7 +18,7 @@ header {
 }
 
 main {
-    padding: 150px 8% 100px 8%;
+    padding: 150px 8% 150px 8%;
 }
 
 section.row-container {
@@ -94,7 +94,7 @@ nav a {
 }
 
 nav li:hover a,
-nav li.open {
+a.selected {
     color: #ffd700;
     text-decoration: underline;
 }
@@ -133,10 +133,16 @@ h3 {
 }
 
 h3.div-title {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 40px;
+    padding-top: 80px;
     text-align: center;
     font-weight: bold;
+}
+
+h3.div-title,
+#chi_sono {
+    padding-top: 80px;
 }
 
 h3.article-title {
@@ -157,6 +163,7 @@ main p {
 
 /*TODO: Change font */
 footer p {
+    margin: 8px;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     color: white;
@@ -225,8 +232,8 @@ button {
     font-size: 16px;
 }
 
-/*TODO: Cambiare stile bottoni*/
 button:hover,
 input[type="submit"]:hover {
-    background-color: #006837;
+    background-color: darkblue;
+    color: white;
 }
