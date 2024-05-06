@@ -1,6 +1,3 @@
-Logo quand pronto
-Font Aptos
-cambiare link via macello
 responsive design
+Logo quand pronto
 animations
-links header

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'aptos';
+    src: url('/fonts/aptos.ttf') format('truetype');
+}
+
 /* Layout */
 body {
     margin: 0;
@@ -84,11 +89,6 @@ nav li {
     list-style-type: none;
 }
 
-/*TODO: Change Font*/
-nav li.selected {
-    font-family: "Arial", sans-serif;
-}
-
 nav a {
     text-decoration: none;
 }
@@ -116,7 +116,7 @@ main li {
 
 /* Text */
 .text {
-    font-family: "Aptos", sans-serif;
+    font-family: 'aptos', sans-serif;
     color: grey;
 }
 
@@ -161,10 +161,9 @@ main p {
     line-height: 36px;
 }
 
-/*TODO: Change font */
 footer p {
     margin: 8px;
-    font-family: "Arial", sans-serif;
+    font-family: 'aptos', sans-serif;
     font-size: 14px;
     color: white;
 }
@@ -211,7 +210,7 @@ input[type="tel"] {
 textarea {
     width: 62%;
     resize: none;
-    font-family: Arial, sans-serif;
+    font-family: 'aptos', sans-serif;
 }
 
 button,
